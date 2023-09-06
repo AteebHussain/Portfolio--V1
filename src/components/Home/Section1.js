@@ -4,13 +4,13 @@ const Sec1 = () => {
 	return (
 		<>
 			<div className='topInfo'>
-				<p className='textAnim'>Hi, I am Syed Ateeb...</p>
+				<p className='textAnim1'>Hi, I am Syed Ateeb...</p>
 				{/* <div className='info2'>Developer, Designer and Visionary.</div> */}
 			</div>
 
-			<div className='scrolling-words-container'>
+			<div className='scrolling-words-container1'>
 				<span>console.log("I am a</span>
-				<div className='scrolling-words-box'>
+				<div className='scrolling-words-box1'>
 					<ul>
 						<li className='li1'>Developer</li>
 						<li className='li2'>Designer</li>
