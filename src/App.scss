@@ -1,3 +1,4 @@
+
 /** @format */
 
 .App {
@@ -101,16 +102,19 @@ body {
 
 /* ------- Infos ------- */
 
-.info1 {
-	font-size: 4.5rem;
+/* .info1 {
+	font-size: 5.5rem;
 	font-weight: bold;
 	color: var(--white);
-}
+	margin-top: 0px;
+    margin-bottom: 10px;
+} */
 
 .info2 {
-	font-size: 25px;
+	font-size: 33px;
+	font-weight: 500;
 	color: var(--green);
-	margin-top: 29px;
+	margin-top: 40px;
 }
 
 #info3 {
@@ -163,10 +167,10 @@ body {
 
 #info12 {
 	font-family: var(--font-sans);
-	color: var(--white);
-	font-size: 17px;
-	font-weight: 400;
-	line-height: 28px;
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
 }
 
 #info13 {
@@ -232,10 +236,10 @@ body {
 
 #info21 {
 	font-size: 24px;
-	color: var(--light-slate);
-	padding: 5px 1vw;
-	display: flex;
-	text-align-last: center;
+    color: var(--light-slate);
+    padding: 5px 1vw;
+    display: flex;
+    text-align-last: center;
 }
 
 /* ------- Header ------- */
@@ -289,96 +293,87 @@ body {
 
 /* ------- Section1 ------- */
 
-.textAnim1{
+.textAnim {
 	font-size: 5.3rem;
 	font-weight: bold;
 	color: var(--white);
 	margin-top: 0px;
-	margin-bottom: 10px;
-	border-right: solid 4px rgba(255, 255, 255, 0.75);
+    margin-bottom: 10px;
+	border-right: solid 4px rgba(255,255,255,.75);
 	white-space: nowrap;
-	overflow: hidden;
+	overflow: hidden; 
 	animation: animated-text 1s linear 0.7s 1 normal both,
-		animated-cursor 800ms linear infinite;
-	margin: 0 auto;
+             animated-cursor 800ms linear infinite;
+			 margin: 0 auto;
 }
 
 /* text animation */
 
-@keyframes animated-text {
-	from {
-		width: 0vw;
-	}
-	to {
-		width: 805px;
-	}
-}
-
+@keyframes animated-text{
+	from{width: 0vw;}
+	to{width: 805px;}
+  }
+  
 /* cursor animations */
-
-@keyframes animated-cursor {
-	from {
-		border-right-color: rgba(255, 255, 255, 0.75);
-	}
-	to {
-		border-right-color: transparent;
-	}
+  
+@keyframes animated-cursor{
+	from{border-right-color: rgba(255,255,255,.75);}
+	to{border-right-color: transparent;}
 }
 
-.scrolling-words-container1 {
+.scrolling-words-container {
 	display: flex;
-	align-items: center;
-	font-size: 32px;
-	font-weight: 600;
-	align-content: center;
-	justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 600;
+    align-content: center;
+    justify-content: center;
 	margin-top: 4px;
-	margin-bottom: 6px;
+    margin-bottom: 6px;
 }
-
-.scrolling-words-box1 {
+  
+.scrolling-words-box {
 	height: 3rem;
 	overflow: hidden;
-
+	
 	ul {
-		margin: 0 0.625rem;
-		padding: 0;
-		animation: scrollUp 4s infinite;
-		li {
-			display: flex;
-			align-items: center;
-			/* justify-content: flex-end;*/
-			height: 3rem;
-			list-style: none;
-		}
+	  margin: 0 0.625rem;
+	  padding: 0;
+	  animation: scrollUp 4s infinite;
+	  li {
+		display: flex;
+		align-items: center;
+		// justify-content: flex-end;
+		height: 3rem;
+		list-style: none; 
+	  }
 	}
-}
+  }
 
-.li1 {
+.li1{
 	color: #08ffd0;
 }
-.li2 {
+.li2{
 	color: var(--pink);
 }
-.li3 {
+.li3{
 	color: orange;
 }
-.li4 {
-	color: greenyellow;
+.li4{
+	color:greenyellow;
 }
-
-/* Variables */
-
+  
+// Variables
 $item-count: 5;
-
+  
 @keyframes scrollUp {
 	@for $i from 1 through ($item-count - 1) {
-		#{($i * 25) - 10%},
-		#{$i * 25%} {
-			transform: translateY((-100% / $item-count) * $i);
-		}
+	  #{($i * 25) - 10%}, #{$i * 25%} {
+		transform: translateY((-100% / $item-count) * $i);
+	  }
 	}
 }
+
 
 .topInfo {
 	display: flex;
@@ -404,15 +399,15 @@ $item-count: 5;
 .avatar {
 	height: 212px;
 	width: 212px;
-	margin-top: 37px;
+	margin-top: 24px;
 }
 
 .backGround {
-	height: 259px;
+	height: 330px;
 	width: 992px;
 	display: flex;
 	justify-content: center;
-	margin-top: 7.7rem;
+	margin-top: 3.7rem;
 }
 
 .rect {
@@ -425,7 +420,7 @@ $item-count: 5;
 }
 .rect-right {
 	background-color: var(--green);
-	width: 741px;
+	width: 997px;
 	height: 5px;
 	border-radius: 5px;
 }
@@ -446,7 +441,7 @@ $item-count: 5;
 	width: 50%;
 }
 
-.inner {
+.inner{
 	padding-top: 30px;
 }
 
@@ -491,14 +486,14 @@ $item-count: 5;
 	width: 110vw;
 	justify-content: center;
 	align-items: center;
-	padding-top: 108px;
+	padding-top: 60px;
 }
 
 #sec3 {
-	width: 70%;
+	width: 70%; 
 }
 
-.workSection {
+.workSection{
 	padding-top: 20px;
 }
 
@@ -552,13 +547,13 @@ $item-count: 5;
 	line-height: 12px;
 }
 
-#skillsSection {
+#skillsSection{
 	display: flex;
 }
 
 /* ------- Projects ------- */
 
-#projects {
+#projects{
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
@@ -569,16 +564,15 @@ $item-count: 5;
 }
 
 #sec4 {
-	width: 97%;
-	margin-top: 80px;
+	width: 97%; 
+	margin-top: 52px;
 }
 
-.inner4 {
+.inner4{
 	padding-top: 35px;
 }
 
-#project1,
-#project2,
+#project1, #project2,
 #project3 {
 	width: 100%;
 	display: flex;
@@ -623,6 +617,7 @@ $item-count: 5;
 	margin-left: 28px;
 }
 
+
 /* ------- Contacts ------- */
 
 #contact {
@@ -637,15 +632,15 @@ $item-count: 5;
 
 #sec5 {
 	width: 78%;
-	margin-top: 23px;
+	margin-top: 38px;
 }
 
-.inner5 {
+.inner5{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 72vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	width: 72vw
 }
 
 .links {
@@ -698,25 +693,26 @@ $item-count: 5;
 /* ------- Media Queries ------- */
 
 @media only screen and (max-width: 620px) {
+
 	/* For mobile phones: */
-
+	
 	/* ------- Infos ------- */
-
+	
 	.info1 {
 		font-size: 3rem;
 		flex-direction: column;
 		padding: 5px 0vw;
 	}
 
-	.info2 {
-		flex-direction: column;
-		padding: 5px 0vw;
+	.info2{
+	padding: 0px 10vw;
+    font-size: 19px;
 	}
 
-	#info13 {
-		padding: 17px;
-		text-align: center;
-		width: 105%;
+	#info13{
+	padding: 17px;
+    text-align: center;
+    width: 105%;
 	}
 
 	#info14 {
@@ -754,23 +750,15 @@ $item-count: 5;
 	}
 
 	#info21 {
-		font-size: 12px;
-		color: var(--light-slate);
-		width: 96vw;
+	font-size: 12px;
+    color: var(--light-slate);
+    width: 96vw;
 	}
-
+	
 	/* ------- Header ------- */
-
+	
 	.logo,
 	.resume {
-		flex-direction: column;
-		padding: 5px 0vw;
-	}
-
-	/* ------- Section1 ------- */
-
-	.avatar,
-	.backGround {
 		flex-direction: column;
 		padding: 5px 0vw;
 	}
@@ -779,7 +767,28 @@ $item-count: 5;
 		margin-left: -10vw;
 	}
 
-	.textAnim1{
+	/* ------- Section1 ------- */
+	
+	.avatar,
+	.backGround{
+		flex-direction: column;
+		padding: 5px 0vw;
+	}
+
+	.avatar{
+		margin-top: 26px;
+		margin-bottom: -100px;
+	}
+
+	// .rect{
+	// 	margin-bottom: -100px;
+	// }
+
+	.rect-right{
+      margin-top: -154px;
+	}
+
+	.textAnim{
 		font-size: 33px;
     display: inline-flex;
     max-width: 91%;
@@ -788,29 +797,30 @@ $item-count: 5;
     margin-bottom: -10px;
 	}
 
-	.scrolling-words-container1{
+	.scrolling-words-container{
 		margin-top: 7px;
     font-size: 18px;
     font-weight: 400;
 	}
-
-	/* ------- About ------- */
-
-	#about {
-		flex-direction: column;
-		padding: 5px 0vw;
-	}
+	
+    /* ------- About ------- */
 
 	#about {
 		flex-direction: column;
 		padding: 5px 0vw;
 	}
+	
+	#about{
+		flex-direction: column;
+		padding: 5px 0vw;
 
-	#sec1 {
+	}
+
+	#sec1{
 		width: 70%;
 	}
 
-	.workSection {
+	.workSection{
 		padding-top: 0px;
 	}
 	#sec2 {
@@ -818,22 +828,19 @@ $item-count: 5;
 	}
 
 	/* ------- Skills ------- */
-
-	.inner1,
-	.inner2,
-	.inner3,
-	.inner7 {
+	
+	.inner1, .inner2, .inner3, .inner7 {
 		display: inline;
 	}
 
 	/* ------- Projects ------- */
 
-	#sec4 {
-		display: flex;
-		align-items: center;
-		width: 100%;
-		flex-direction: column;
-		flex-wrap: wrap;
+	#sec4{
+	display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
 	}
 
 	#project1 img,
@@ -844,12 +851,12 @@ $item-count: 5;
 		margin-left: -35px;
 	}
 
-	#project1 {
+	#project1{
 		display: inline;
 		padding-top: 60px;
 	}
 
-	#project1Desc {
+	#project1Desc{
 		margin-left: -33px;
 		width: 125%;
 	}
@@ -859,8 +866,8 @@ $item-count: 5;
 	/* .links {
 		width: 61vw;
 	} */
-
-	/* #sec5 {
+	
+    /* #sec5 {
     	width: 100vw;
     } */
 
@@ -868,11 +875,11 @@ $item-count: 5;
 		width: 140vw;
 	} */
 
-	#sec5 {
+	#sec5{
 		max-width: 100%;
 	}
 
-	.inner5 {
+	.inner5{
 		width: 71vw;
 	}
 
@@ -887,4 +894,5 @@ $item-count: 5;
 	#gmail {
 		margin-left: 26px;
 	}
+
 }
