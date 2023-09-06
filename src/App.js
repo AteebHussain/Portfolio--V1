@@ -1,6 +1,6 @@
 /** @format */
 
-import "./App.css";
+import "./App.scss";
 import About from "./components/Home/About";
 import Contact from "./components/Home/Contact";
 import Header from "./components/Home/Header";
