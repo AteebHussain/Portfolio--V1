@@ -2,21 +2,21 @@
 
 const projectData = [
 	{
-		title: "Formula 1 Landing Page.",
-		imgSrc: "/img/P1 (2).png",
-		desc: "Being a huge fan of Formula 1, I've made a good looking landing page on the current 2022 season. It includes the team name along with their current drivers as well as some information about the team.",
+		title: "PortScann.",
+		imgSrc: "/img/P1 (1).png",
+		desc: "Being an Open Source Intelligence enthusiast, I made this port scanner using python. It's a simple 40-line code program which can scan 5000 ports accurately and tell which one is open. Good for web security.",
 	},
 	{
 		title: "Braincoats Fan Website.",
-		imgSrc: "/img/P1 (1).png",
+		imgSrc: "/img/P1 (2).png",
 		desc: "A minimal fan-made website of the band Braincoats. Ever since I discovered them on Youtube, I became obsessed with the band and their music. This site includes an about page, a photo gallery and a full discography section with some of their best tracks.",
 	},
 
 
 	{
-		title: "Taskify.",
+		title: "CodeBlog.",
 		imgSrc: "/img/P1 (3).png",
-		desc: "A simple yet effective CRUD app made with Javascript. This will handle all your tasks with the option to change or delete a pre-existing task. Utilise your time with Taskify without needing to worry about forgetting your tasks.",
+		desc: "A blog site inclined towards CSE students. Gives users the ability to create, edit or delete their blogs. The blogs have a detailed descripion alongwith a code editor for programs. Users can also comment on their/others blog posts.",
 	},
 ];
 const Projects = () => {

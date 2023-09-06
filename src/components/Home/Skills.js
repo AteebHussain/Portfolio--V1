@@ -14,9 +14,8 @@ const Skills = () => {
 							<ul id='skillList'>
 								{" "}
 								<li>Javascript</li>
-								<li>Typescript</li>
-								<li>CSS</li>
-								<li>HTML</li>
+								<li>C++</li>
+								<li>Python</li>
 							</ul>
 						</p>
 					</div>
@@ -28,8 +27,10 @@ const Skills = () => {
 								<li>React.js</li>
 								<li>Express.js</li>
 								<li>Node.js</li>
-								<li>Mongo DB</li>
-								<li>Figma UI</li>
+								<li>Tailwind CSS</li>
+								<li>SCSS</li>
+								<li>CSS</li>
+								<li>HTML</li>
 							</ul>
 						</p>
 					</div>
@@ -43,6 +44,26 @@ const Skills = () => {
 								<li>Graphic Designing</li>
 								<li>Gaming</li>
 								<li>Sketching</li>
+							</ul>
+						</p>
+					</div>
+
+					<div className='inner2'>
+						<p id='info9'>
+							Databases-{" "}
+							<ul id='skillList'>
+								<li>MongoDB</li>
+								<li>MySQL</li>
+							</ul>
+						</p>
+					</div>
+
+					<div className='inner7'>
+						<p id='info9'>
+							Others-{" "}
+							<ul id='skillList'>
+								<li>Github</li>
+								<li>Git</li>
 							</ul>
 						</p>
 					</div>

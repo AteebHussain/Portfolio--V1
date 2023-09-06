@@ -427,6 +427,12 @@ body {
 	margin-left: 212px;
 }
 
+.inner7 {
+	display: inline-block;
+	margin-top: -24px;
+	margin-left: 375px;
+}
+
 #skillList {
 	display: grid;
 	padding: 0px 0vw;
@@ -708,7 +714,7 @@ body {
 
 	/* ------- Skills ------- */
 	
-	.inner1, .inner2, .inner3 {
+	.inner1, .inner2, .inner3, .inner7 {
 		display: inline;
 	}
 
