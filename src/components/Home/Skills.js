@@ -27,7 +27,7 @@ const Skills = () => {
 								<li>React.js</li>
 								<li>Express.js</li>
 								<li>Node.js</li>
-								<li>Tailwind CSS</li>
+								{/* <li>Tailwind CSS</li> */}
 								<li>SCSS</li>
 								<li>CSS</li>
 								<li>HTML</li>
@@ -52,8 +52,8 @@ const Skills = () => {
 						<p id='info9'>
 							Databases-{" "}
 							<ul id='skillList'>
-								<li>MongoDB</li>
 								<li>MySQL</li>
+								<li>MongoDB</li>
 							</ul>
 						</p>
 					</div>
@@ -64,6 +64,8 @@ const Skills = () => {
 							<ul id='skillList'>
 								<li>Github</li>
 								<li>Git</li>
+								<li>Flask</li>
+								{/* <li>Bootstrap</li> */}
 							</ul>
 						</p>
 					</div>
